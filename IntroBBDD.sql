@@ -14,7 +14,7 @@ WHERE status = 'On Time';
 
 SELECT *
 FROM bookings
-WHERE total_amount > 1000000;
+WHERE total_amount >= 1000000;
 
 
 /* 3. Escribe una consulta que extraiga todas las columnas de los datos
@@ -28,7 +28,7 @@ FROM aircrafts;
     que extraiga los identificadores de vuelo que han volado con un Boeing 737.
     (Código Modelo Avión = 733) */
 
-SELECT flight_no, aircraft_code
+SELECT flight_id, flight_no, aircraft_code
 FROM flights
 WHERE aircraft_code = '733';
 
